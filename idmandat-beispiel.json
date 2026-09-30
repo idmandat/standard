@@ -1,0 +1,45 @@
+{
+  "idmandat": "0.1",
+  "domain": "musterbau.de",
+  "organization": {
+    "name": "Musterbau GmbH",
+    "legalForm": "GmbH",
+    "address": "Hauptstraße 1, 49074 Osnabrück, DE",
+    "register": {
+      "court": "Amtsgericht Osnabrück",
+      "number": "HRB 12345"
+    },
+    "vatId": "DE123456789",
+    "imprint": "https://musterbau.de/impressum"
+  },
+  "agents": [
+    {
+      "id": "captain",
+      "name": "Captain",
+      "role": "Beratung und Terminvereinbarung",
+      "isHuman": false,
+      "endpoint": "https://musterbau.de/agent",
+      "protocols": [
+        "a2a",
+        "mcp"
+      ],
+      "mandate": {
+        "may": [
+          "answer_product_questions",
+          "reserve_appointment"
+        ],
+        "mayNot": [
+          "conclude_contract",
+          "trigger_payment"
+        ],
+        "bindingOnlyAfter": "Bestätigung durch einen Menschen"
+      },
+      "humanContact": "kontakt@musterbau.de"
+    }
+  ],
+  "verification": {
+    "registry": "https://idmandat.com",
+    "dns": "_idmandat.musterbau.de"
+  },
+  "updated": "2026-09-30"
+}
